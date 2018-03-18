@@ -133,7 +133,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/edit1"
+                    android:id="@+id/edit2"
                     android:layout_width="200dp"
                     android:layout_height="50dp"
                     android:hint="@string/res"
@@ -142,7 +142,7 @@
                 <Spinner
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:layout_alignRight="@id/edit1"/>
+                    android:layout_alignRight="@id/edit2"/>
             </RelativeLayout>
         </LinearLayout>
         <LinearLayout
