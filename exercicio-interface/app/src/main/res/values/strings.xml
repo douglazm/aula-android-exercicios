@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">exercicio-interface</string>
+    <string name="nome">Nome</string>
+    <string name="sobrenome">Sobrenome</string>
+    <string name="tel">Telefone</string>
+    <string name="cel">Celular</string>
+    <string name="email">E-mail</string>
+    <string name="res">Residencial</string>
 </resources>
