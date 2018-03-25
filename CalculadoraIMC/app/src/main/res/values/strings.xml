@@ -11,4 +11,13 @@
     <string name="btnLimpar">LIMPAR</string>
     <string name="imc">IMC</string>
     <string name="btnTabela">Tabela IMC</string>
+    <string name="tbIMC">Tabela IMC</string>
+    <string name="saudacao">Olá</string>
+    <string name="resultIMC">Seu IMC é</string>
+    <string name="abaixoPeso">você está abaixo do peso.</string>
+    <string name="pesoNormal">você está com peso normal.</string>
+    <string name="sobrepeso">você está um pouco acima do peso normal.</string>
+    <string name="obesidade1">você está com obesidade grau I.</string>
+    <string name="obesidade2">você está com obesidade grau II.</string>
+    <string name="obesidade3">você está com obesidade mórbida.</string>
 </resources>

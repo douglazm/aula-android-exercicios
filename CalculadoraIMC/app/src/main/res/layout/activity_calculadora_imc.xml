@@ -161,6 +161,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
             android:background="@color/btnCalcular"
+            android:onClick="calcularIMC"
             android:paddingHorizontal="10dp"
             android:paddingVertical="10dp"
             android:text="@string/btnCalcular"
@@ -177,6 +178,7 @@
             android:layout_marginEnd="24dp"
             android:layout_marginTop="8dp"
             android:background="@color/CorPrimaria"
+            android:onClick="limpar"
             android:paddingHorizontal="10dp"
             android:paddingVertical="10dp"
             android:text="@string/btnLimpar"
@@ -194,6 +196,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:background="@color/colorAccent"
+            android:onClick="mostrarTabela"
             android:paddingHorizontal="5dp"
             android:paddingVertical="5dp"
             android:text="@string/btnTabela"
@@ -219,79 +222,70 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/textResult"
+            android:id="@+id/textSaudacao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:autoSizeTextType="none"
             android:backgroundTint="@android:color/black"
-            android:text="Olá"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textResult1"
+            android:id="@+id/textResultNome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:autoSizeTextType="none"
             android:backgroundTint="@android:color/black"
-            android:text="Douglas Michielin,"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/textResult"
+            app:layout_constraintStart_toEndOf="@+id/textSaudacao"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textResult4"
+            android:id="@+id/textResultInfo"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginStart="8dp"
             android:autoSizeTextType="none"
             android:backgroundTint="@android:color/black"
-            android:text="você está acima do peso."
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textResult1" />
+            app:layout_constraintTop_toBottomOf="@+id/textResultNome" />
 
         <TextView
-            android:id="@+id/textResult2"
+            android:id="@+id/textIMC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:backgroundTint="@android:color/black"
-            android:text="Seu IMC é"
             android:textSize="25sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textResult1"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textResult3"
+            android:id="@+id/textValorIMC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginTop="8dp"
             android:backgroundTint="@android:color/black"
-            android:text="35,00"
             android:textSize="35sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textResult4"
-            app:layout_constraintTop_toBottomOf="@+id/textResult2" />
+            app:layout_constraintTop_toBottomOf="@+id/textIMC" />
     </android.support.constraint.ConstraintLayout>
 
 </android.support.constraint.ConstraintLayout>
