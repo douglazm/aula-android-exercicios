@@ -11,4 +11,5 @@
     <string name="btnCalcular">CALCULATE IMC</string>
     <string name="btnLimpar">CLEAN</string>
     <string name="imc">IMC</string>
+    <string name="btnTabela">Table IMC</string>
 </resources>
