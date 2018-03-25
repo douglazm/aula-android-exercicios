@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CalculatorIMC</string>
+    <string name="tituloApp">Calculator IMC</string>
+    <string name="textNome">Type your name:</string>
+    <string name="editNome">Name</string>
+    <string name="textAltura">Enter your height:</string>
+    <string name="editAltura">Height</string>
+    <string name="textPeso">Enter your weight:</string>
+    <string name="editPeso">Weight</string>
+    <string name="btnCalcular">CALCULATE IMC</string>
+    <string name="btnLimpar">CLEAN</string>
+    <string name="imc">IMC</string>
+</resources>
