@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
 
+import java.io.Console;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 
@@ -51,48 +52,57 @@ public class CalculadoraIMC extends AppCompatActivity {
 
         try {
 
-            Float alt = Float.valueOf(altura.getText().toString());
-            Float ps = Float.valueOf(peso.getText().toString());
-            Float res = ps / (alt*alt);
-            NumberFormat formatarFloat= new DecimalFormat("0.00");
-            String imc = formatarFloat.format(res);
-            resultIMC.setText(imc);
+            if (nome.length() < 3 || nome.length() > 20) {
+                nome.setError("Nome Inválido!");
+            }else{
+                try{
+                    Float alt = Float.valueOf(altura.getText().toString());
+                    try{
+                        Float ps = Float.valueOf(peso.getText().toString());
+                        String n = String.valueOf(nome.getText().toString());
+                        resultNome.setText(n);
 
-            String n = String.valueOf(nome.getText().toString());
-            resultNome.setText(n);
+                        resultSaudacao.setText(R.string.saudacao);
 
-            resultSaudacao.setText(R.string.saudacao);
+                        Float res = ps / (alt*alt);
+                        NumberFormat formatarFloat= new DecimalFormat("0.00");
+                        String imc = String.valueOf(formatarFloat.format(res));
+                        resultIMC.setText(imc);
 
+                        switch (categoriaIMC(res)){
+                            case "ABAIXO":
+                                resultInfo.setText(R.string.abaixoPeso);
+                                break;
+                            case "NORMAL":
+                                resultInfo.setText(R.string.pesoNormal);
+                                break;
+                            case "SOBREPESO":
+                                resultInfo.setText(R.string.sobrepeso);
+                                break;
+                            case "OBESIDADE1":
+                                resultInfo.setText(R.string.obesidade1);
+                                break;
+                            case "OBESIDADE2":
+                                resultInfo.setText(R.string.obesidade2);
+                                break;
+                            case "OBESIDADE3":
+                                resultInfo.setText(R.string.obesidade3);
+                                break;
+                            default:
+                                resultInfo.setText("");
+                        }
 
-            switch (categoriaIMC(res)){
-                case "ABAIXO":
-                    resultInfo.setText(R.string.abaixoPeso);
-                    break;
-                case "NORMAL":
-                    resultInfo.setText(R.string.pesoNormal);
-                    break;
-                case "SOBREPESO":
-                    resultInfo.setText(R.string.sobrepeso);
-                    break;
-                case "OBESIDADE1":
-                    resultInfo.setText(R.string.obesidade1);
-                    break;
-                case "OBESIDADE2":
-                    resultInfo.setText(R.string.obesidade2);
-                    break;
-                case "OBESIDADE3":
-                    resultInfo.setText(R.string.obesidade3);
-                    break;
-                default:
-                    resultInfo.setText("");
+                        resultTextIMC.setText(R.string.resultIMC);
+                    } catch (Exception e){
+                        peso.setError("Peso Inválido!");
+                    }
+                } catch (Exception e){
+                    altura.setError("Altura Inválida!");
+                }
             }
-
-            resultTextIMC.setText(R.string.resultIMC);
-
         } catch (Exception e){
 
         }
-
     }
 
     public void limpar(View view){
@@ -102,6 +112,10 @@ public class CalculadoraIMC extends AppCompatActivity {
             nome.setText("");
             altura.setText("");
             peso.setText("");
+
+            nome.setError(null);
+            altura.setError(null);
+            peso.setError(null);
 
             resultSaudacao.setText("");
 
