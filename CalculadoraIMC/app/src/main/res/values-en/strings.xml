@@ -10,6 +10,14 @@
     <string name="editPeso">Weight</string>
     <string name="btnCalcular">CALCULATE IMC</string>
     <string name="btnLimpar">CLEAN</string>
-    <string name="imc">IMC</string>
     <string name="btnTabela">Table IMC</string>
+    <string name="tbIMC">Table IMC</string>
+    <string name="saudacao">Hello</string>
+    <string name="resultIMC">Your IMC is</string>
+    <string name="abaixoPeso">you are underweight.</string>
+    <string name="pesoNormal">you are of normal weight.</string>
+    <string name="sobrepeso">you're a little overweight.</string>
+    <string name="obesidade1">you are with obesity grade I.</string>
+    <string name="obesidade2">you are with obesity grade II.</string>
+    <string name="obesidade3">You're morbidly obese.</string>
 </resources>
