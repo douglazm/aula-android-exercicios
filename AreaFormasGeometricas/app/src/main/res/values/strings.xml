@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Qual Sua Área?</string>
+    <string name="txtFormas">Forma geométrica:</string>
 </resources>
