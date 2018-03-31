@@ -1,4 +1,16 @@
 <resources>
-    <string name="app_name">Qual Sua Área?</string>
-    <string name="txtFormas">Forma geométrica:</string>
+    <string name="app_name">What is your area?</string>
+    <string name="txtFormas">Geometric form:</string>
+    <string name="txtTitulo">What is your area?</string>
+    <string name="txtRetangulo">Rectangle / Square</string>
+    <string name="txtCirculo">Circle</string>
+    <string name="txtTriangulo">Triangle</string>
+    <string name="txtBase">Base:</string>
+    <string name="txtAltura">Height:</string>
+    <string name="txtRaio">Radius:</string>
+    <string name="btnCalcular">Calculate</string>
+    <string name="txtArea">Area:</string>
+    <string name="txtMedida">cm².</string>
+    <string name="txtErro">Invalid number!</string>
+    <string name="txtErroSelecao">No geometric shapes selected!</string>
 </resources>

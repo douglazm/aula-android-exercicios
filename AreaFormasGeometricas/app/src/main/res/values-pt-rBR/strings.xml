@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Qual sua área?</string>
+    <string name="txtFormas">Forma geométrica:</string>
+    <string name="txtTitulo">Qual sua área?</string>
+    <string name="txtRetangulo">Retângulo / Quadrado</string>
+    <string name="txtCirculo">Círculo</string>
+    <string name="txtTriangulo">Triângulo</string>
+    <string name="txtAltura">Altura:</string>
+    <string name="txtRaio">Raio:</string>
+    <string name="btnCalcular">Calcular</string>
+    <string name="txtArea">Área:</string>
+    <string name="txtErro">Número inválido!</string>
+    <string name="txtErroSelecao">Nenhuma forma geométrica selecionada!</string>
+</resources>
