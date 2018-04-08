@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Formas Geometricas</string>
+    <string name="btnNext">Avançar</string>
+    <string name="radioRetangulo">Retângulo</string>
+    <string name="radioTriangulo">Triângulo</string>
+    <string name="radioCirculo">Circulo</string>
+    <string name="txtBase">Base</string>
+    <string name="txtAltura">Altura</string>
+    <string name="btnCalcular">Calcular</string>
+    <string name="txtArea">Área</string>
+    <string name="txtMedida">cm².</string>
 </resources>
