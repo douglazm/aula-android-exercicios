@@ -25,7 +25,9 @@
         android:layout_marginEnd="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/txtArea"
+        android:textColor="@color/corVermelho"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/txtResultado"
         app:layout_constraintTop_toBottomOf="@+id/imgResultado" />
 
@@ -35,7 +37,9 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginTop="8dp"
+        android:textColor="@color/corVermelho"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imgResultado"
         app:layout_constraintStart_toStartOf="@+id/imgResultado"
         app:layout_constraintTop_toBottomOf="@+id/imgResultado" />
@@ -47,7 +51,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/txtMedida"
+        android:textColor="@color/corVermelho"
         android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/txtResultado"
         app:layout_constraintTop_toBottomOf="@+id/imgResultado" />
 </android.support.constraint.ConstraintLayout>

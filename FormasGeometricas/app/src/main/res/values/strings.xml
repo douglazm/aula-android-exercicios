@@ -1,12 +1,17 @@
 <resources>
-    <string name="app_name">Formas Geometricas</string>
-    <string name="btnNext">Avançar</string>
-    <string name="radioRetangulo">Retângulo</string>
-    <string name="radioTriangulo">Triângulo</string>
-    <string name="radioCirculo">Circulo</string>
-    <string name="txtBase">Base</string>
-    <string name="txtAltura">Altura</string>
-    <string name="btnCalcular">Calcular</string>
-    <string name="txtArea">Área</string>
+    <string name="app_name">What is your area?</string>
+    <string name="txtFormas">Geometric form:</string>
+    <string name="txtTitulo">What is your area?</string>
+    <string name="txtRetangulo">Rectangle / Square</string>
+    <string name="txtCirculo">Circle</string>
+    <string name="txtTriangulo">Triangle</string>
+    <string name="txtBase">Base:</string>
+    <string name="txtAltura">Height:</string>
+    <string name="txtRaio">Radius:</string>
+    <string name="btnCalcular">Calculate</string>
+    <string name="txtArea">Area:</string>
     <string name="txtMedida">cm².</string>
+    <string name="txtErro">Invalid number!</string>
+    <string name="txtErroSelecao">No geometric shapes selected!</string>
+    <string name="btnAvancar">Next</string>
 </resources>
